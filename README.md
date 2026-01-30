@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+# 🍕 efood - Delivery App com React, TypeScript & Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma plataforma completa de entrega de comida desenvolvida com **React** e **TypeScript**, utilizando **Vite** para um ambiente de desenvolvimento ultra-rápido. O projeto foca em fluxos de dados complexos, consumo de APIs assíncronas e gerenciamento de estado global.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 📝 Resumo (Resume)
+Neste projeto, utilizei o **Vite** para garantir um Hot Module Replacement (HMR) eficiente e o **RTK Query** para gerenciar as requisições à API com cache inteligente. A aplicação conta com rotas dinâmicas via **React Router DOM** e gerenciamento de estado centralizado com **Redux Toolkit**. Para garantir a manutenibilidade, implementei regras rigorosas de **ESLint** com suporte a tipos (type-aware linting), assegurando um código limpo e livre de erros comuns em aplicações TypeScript de grande porte.
 
-## React Compiler
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias e Ferramentas (Tech Stack)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Redux Toolkit](https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white)](https://redux-toolkit.js.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org/)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📋 Funcionalidades em Destaque
+* **Build com Vite:** Setup otimizado para performance máxima no desenvolvimento e build de produção.
+* **Consumo de API com RTK Query:** Gerenciamento de dados assíncronos (restaurantes e cardápios) com estados de loading e erro integrados.
+* **Linting Avançado (Type-Aware):** Configuração do ESLint para análise estática de tipos, garantindo maior segurança no uso de TypeScript.
+* **Rotas Dinâmicas:** Navegação fluida entre Home e Perfil de restaurantes utilizando parâmetros de URL.
+* **Sistema de Checkout & Carrinho:** Lógica centralizada no Redux para manipulação de produtos e validação de dados de entrega/pagamento.
+* **Estilização com Styled Components:** Interface responsiva e temática, utilizando GlobalStyles e tipagem para temas personalizados.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 👨‍💻 Sobre mim (About Me)
+Olá, meu nome é **Kaio**, tenho 22 anos. Como meu objetivo é o **Back-End com Python**, configurar um ambiente com Vite e ESLint Type-Checked me ensinou a importância do **Tooling** e da padronização de projetos. No Back-End, o uso de Linters e Type Checkers (como MyPy no Python) é essencial para manter a integridade dos dados e das APIs. Dominar essas ferramentas no Front-End me torna um desenvolvedor muito mais técnico e atento à qualidade do software em todas as camadas.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Entre em contato (Contact me)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=E66767)](https://linkedin.com/in/kaio-grativol-baldo-071a74150/)
+[![Instagram](https://img.shields.io/badge/Instagram-000?style=for-the-badge&logo=instagram&logoColor=E66767)](https://www.instagram.com/kaiull__/)
+[![GitHub](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=github&logoColor=E66767)](https://github.com/SeuUsuarioAqui)
+
+---
+*Projeto desenvolvido para consolidar o uso de Vite, RTK Query e boas práticas de linting em aplicações React profissionais.*
